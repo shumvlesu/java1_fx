@@ -33,6 +33,9 @@ public class Controller {
                 randomNumberLabel.setText(String.valueOf(randomNumber));
             } catch (NumberFormatException e) {
                 e.printStackTrace();
+                var alert = new Alert(Alert.AlertType.ERROR,"Введите число!");
+                alert.setTitle("Ошибка ввода данных");
+                alert.show();
             }
         }
 
